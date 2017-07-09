@@ -9,7 +9,7 @@ var role_worker = {
   /** @param {Creep} creep **/
   run: function(creep) {
 
-    if ( ( ( creep.ticksToLive <= 150 || creep.memory.role == bomba_constants.ROLE_RENEWER ) && creep.memory.tier >= creep.room.memory.tier ) && worker.length <= bomba_constants.TEMPORARY_VC ) {
+    if ( ( creep.ticksToLive <= 150 || creep.memory.role == bomba_constants.ROLE_RENEWER ) && creep.memory.tier >= creep.room.memory.tier ) {
       role_renew.run(creep);
       return;
     }

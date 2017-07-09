@@ -3,7 +3,7 @@ var populate = require('main_function.populate');
 var set_room_state = require('main_function.set_room_state');
 var worker_controller = require('worker_controller');
 var role_worker = require('role.worker');
-// git test
+
 module.exports.loop = function () {
 
   for(var name in Memory.creeps) {
